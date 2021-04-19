@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         //requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         setContentView(R.layout.activity_main)
 
+        //supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setIcon(R.mipmap.ic_launcher)
+
         val btn_siguiente = findViewById<Button>(R.id.btnSiguiente)
         val btn_calcular = findViewById<Button>(R.id.btnCalcular)
 

@@ -2,7 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/item1"
-        android:icon="@mipmap/ic_video"
-        android:title="Hola" />
+        android:id="@+id/menuPrincipal"
+        android:title="Opciones"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menuContactos"
+                android:icon="@drawable/ic_contacts"
+                android:title="Contactos"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menuMensaje"
+                android:icon="@mipmap/ic_sms"
+                android:title="Enviar SMS"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/menuVideo"
+                android:icon="@mipmap/ic_video"
+                android:title="Video"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
 </menu>

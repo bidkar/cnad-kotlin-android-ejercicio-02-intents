@@ -11,6 +11,9 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
+        supportActionBar!!.title = "Regresar"
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
         val txt = findViewById<TextView>(R.id.textViewIntent)
         if (intent.getStringExtra("saludo") != null) {
             txt.text = intent.getStringExtra("saludo").toString()
